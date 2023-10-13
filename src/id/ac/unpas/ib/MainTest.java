@@ -19,7 +19,7 @@ terhubung)*/
         Node Bekasi = new Node("Bekasi");
         Node Bandung = new Node("Bandung");
         Node Cirebon = new Node("Cirebon");
-        Node Indramayu = new Node("Indramayu");
+        Node indramayu = new Node("Indramayu");
         Node Semarang = new Node("Semarang");
         Node Malang = new Node("Malang");
         Node Surabaya = new Node("Surabaya");
@@ -47,9 +47,9 @@ terhubung)*/
         Bandung.addTetangga(Jakarta);
         Bandung.addTetangga(Bekasi);
 
-        Cirebon.addTetangga(Indramayu);
+        Cirebon.addTetangga(indramayu);
 
-        Indramayu.addTetangga(Cirebon);
+        indramayu.addTetangga(Cirebon);
         indramayu.addTetangga(Semarang);
 
         Semarang.addTetangga(indramayu);
