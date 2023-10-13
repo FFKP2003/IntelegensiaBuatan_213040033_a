@@ -19,7 +19,7 @@ terhubung)*/
         Node Bekasi = new Node("Bekasi");
         Node Bandung = new Node("Bandung");
         Node Cirebon = new Node("Cirebon");
-        Node indramayu = new Node("Indramayu");
+        Node Indramayu = new Node("Indramayu");
         Node Semarang = new Node("Semarang");
         Node Malang = new Node("Malang");
         Node Surabaya = new Node("Surabaya");
@@ -47,12 +47,12 @@ terhubung)*/
         Bandung.addTetangga(Jakarta);
         Bandung.addTetangga(Bekasi);
 
-        Cirebon.addTetangga(indramayu);
+        Cirebon.addTetangga(Indramayu);
 
-        indramayu.addTetangga(Cirebon);
-        indramayu.addTetangga(Semarang);
+        Indramayu.addTetangga(Cirebon);
+        Indramayu.addTetangga(Semarang);
 
-        Semarang.addTetangga(indramayu);
+        Semarang.addTetangga(Indramayu);
         Semarang.addTetangga(Malang);
 
         Malang.addTetangga(Semarang);
@@ -97,7 +97,7 @@ terhubung)*/
         NodeUCS MalangUCS = new NodeUCS(Malang, 151);
         NodeUCS SurabayaUCS = new NodeUCS(Surabaya, 226);
         NodeUCS KalimantanUCS = new NodeUCS(Kalimantan, 244);
-        NodeUCS indramayuUCS = new NodeUCS(indramayu, 241);
+        NodeUCS IndramayuUCS = new NodeUCS(Indramayu, 241);
         NodeUCS CirebonUCS = new NodeUCS(Cirebon, 234);
         NodeUCS JakartaUCS = new NodeUCS(Jakarta, 380);
         NodeUCS TanggerangUCS = new NodeUCS(Tanggerang, 10);
@@ -121,10 +121,10 @@ terhubung)*/
 
         PekanbaruUCS.addTetangga(PadangUCS);
 
-        indramayuUCS.addTetangga(CirebonUCS);
-        indramayuUCS.addTetangga(SemarangUCS);
+        IndramayuUCS.addTetangga(CirebonUCS);
+        IndramayuUCS.addTetangga(SemarangUCS);
 
-        CirebonUCS.addTetangga(indramayuUCS);
+        CirebonUCS.addTetangga(IndramayuUCS);
 
         CilegonUCS.addTetangga(SerangUCS);
         CilegonUCS.addTetangga(TanggerangUCS);
@@ -135,7 +135,7 @@ terhubung)*/
         BekasiUCS.addTetangga(JakartaUCS);
         BekasiUCS.addTetangga(BandungUCS);
 
-        SemarangUCS.addTetangga(indramayuUCS);
+        SemarangUCS.addTetangga(IndramayuUCS);
         SemarangUCS.addTetangga(SurabayaUCS);
 
         PalembangUCS.addTetangga(PekanbaruUCS);
